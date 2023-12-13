@@ -13,6 +13,9 @@
 }
 
 @layer utilities {
+  .h1-semibold {
+    @apply text-3xl font-semibold;
+  }
   .header {
     @apply w-full sticky top-0 left-0 bg-gray-950 px-16 opacity-80;
   }
@@ -28,7 +31,18 @@
   }
 
   .container {
-    @apply px-16 py-5;
+    @apply px-16 py-5 h-[100vh];
+  }
+
+  .intro {
+    @apply flex justify-evenly mt-0 pt-0;
+  }
+  .about {
+    @apply flex justify-evenly;
+  }
+
+  .about-desc {
+    @apply text-xl text-justify;
   }
 }
 
