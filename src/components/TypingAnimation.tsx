@@ -52,7 +52,7 @@ const TypingAnimation = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
-            {displayedText} <span className="text-purple-500">|</span>
+            {displayedText} <span className="text-purple-400">|</span>
           </motion.span>
         </h1>
       )}
