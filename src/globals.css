@@ -2,23 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    * {
-      @apply box-border list-none p-0 m-0 scroll-smooth;
-    }
-  
-    body {
-      @apply bg-light-1 text-dark-3 min-h-screen;
-    }
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
   }
-  
-  @layer utilities {
-  
-  
+
+  body {
+    @apply bg-black text-gray-50 min-h-screen pb-7;
+  }
 }
-  
-  @layer components {
 
-
+@layer utilities {
+  .header {
+    @apply w-full sticky top-0 left-0 bg-gray-950 px-16 opacity-80;
   }
+  .header-container {
+    @apply flex justify-end items-center gap-8 py-6;
+  }
+  .hero-image {
+    @apply h-11 w-11 rounded-[50%];
+  }
+
+  .header-text {
+    @apply text-lg font-semibold text-white hover:text-gray-500 cursor-pointer;
+  }
+
+  .container {
+    @apply px-16 py-5;
+  }
+}
+
+@layer components {
+}
