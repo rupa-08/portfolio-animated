@@ -1,9 +1,15 @@
 import { Suspense, useEffect, useState } from 'react';
+
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+
 import Loader from './Loader';
 
-const Computers = ({ isMobile }: any) => {
+interface ComputersProps {
+  isMobile: boolean;
+}
+
+const Computers = ({ isMobile }: ComputersProps) => {
   const computer = useGLTF('/images/3d-img/gaming_desktop_pc/scene.gltf');
   return (
     <mesh>
@@ -36,7 +42,7 @@ const ComputerCanvas = () => {
     // initial value of "isMobile" state variable
     setIsMobile(mediaQuery.matches);
     // callback function to handle changes to media query
-    const handleMediaQueryChange = (e: any) => {
+    const handleMediaQueryChange = (e: MediaQueryListEvent) => {
       setIsMobile(e.matches);
     };
 

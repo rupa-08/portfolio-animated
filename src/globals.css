@@ -31,7 +31,7 @@
     @apply bg-gradient-to-r from-purple-800 via-purple-700 to-purple-600;
   }
   .header {
-    @apply w-full sticky top-0 left-0 bg-gray-900 px-16 opacity-80;
+    @apply w-full sticky z-10 top-0 left-0 bg-gray-900 px-16 opacity-80;
   }
   .header-container {
     @apply flex justify-end items-center gap-8 py-6;
