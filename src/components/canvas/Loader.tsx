@@ -1,7 +1,14 @@
-import React from 'react';
+import { Html, useProgress } from '@react-three/drei';
 
 const Loader = () => {
-  return <div>Loader</div>;
+  const { progress } = useProgress();
+  return (
+    <Html>
+      <p className="text-base mt-10 font-bold">
+        {progress.toFixed(2)}% Loading...
+      </p>
+    </Html>
+  );
 };
 
 export default Loader;
