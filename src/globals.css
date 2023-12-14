@@ -14,7 +14,7 @@
 
 @layer utilities {
   .h1-semibold {
-    @apply text-3xl font-semibold;
+    @apply lg:text-3xl sm:text-lg font-semibold;
   }
 
   .violet-gradient-line {
@@ -49,7 +49,7 @@
   }
 
   .intro {
-    @apply flex lg:flex-row md:flex-col sm:flex-col justify-evenly mt-0 pt-0;
+    @apply flex  justify-evenly mt-0 pt-0;
   }
 
   .about {
