@@ -10,6 +10,9 @@ const About = () => {
           highly value punctuality. Experience in crafting user-friendly
           interfaces with skills in JavaScript, React, HTML, and CSS.
         </p>
+        <button className="button violet-gradient border-purple-950">
+          Download CV
+        </button>
       </div>
     </div>
   );

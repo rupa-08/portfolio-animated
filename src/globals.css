@@ -16,6 +16,20 @@
   .h1-semibold {
     @apply text-3xl font-semibold;
   }
+
+  .violet-gradient-line {
+    background: #804dee;
+    background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+    background: -webkit-linear-gradient(
+      -90deg,
+      #804dee 0%,
+      rgba(60, 51, 80, 0) 100%
+    );
+  }
+
+  .violet-gradient {
+    @apply bg-gradient-to-r from-purple-800 via-purple-700 to-purple-600;
+  }
   .header {
     @apply w-full sticky top-0 left-0 bg-gray-950 px-16 opacity-80;
   }
@@ -37,6 +51,7 @@
   .intro {
     @apply flex justify-evenly mt-0 pt-0;
   }
+
   .about {
     @apply flex justify-evenly;
   }
@@ -47,4 +62,7 @@
 }
 
 @layer components {
+  .button {
+    @apply border-[1px] rounded-full text-lg w-48 py-3 px-6;
+  }
 }
