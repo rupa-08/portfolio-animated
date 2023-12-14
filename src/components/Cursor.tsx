@@ -19,7 +19,7 @@ const Cursor = () => {
   console.log(position);
   return (
     <motion.div
-      className="fixed top-0 left-0 w-7 h-7 rounded-full mix-blend-difference bg-purple-400"
+      className="fixed top-0 left-0 w-7 h-7 rounded-full mix-blend-difference bg-purple-400 z-40"
       animate={{ x: position.x, y: position.y }}
     ></motion.div>
   );

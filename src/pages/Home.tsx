@@ -1,5 +1,6 @@
 import About from '@/components/About';
 import Cursor from '@/components/Cursor';
+import Experience from '@/components/Experience';
 import Intro from '@/components/Intro';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <Intro />
       <About />
+      <Experience />
       <Cursor />
     </div>
   );
