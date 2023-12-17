@@ -5,9 +5,8 @@ import * as random from 'maath/random/dist/maath-random.cjs';
 
 const Stars = (props) => {
   const ref = useRef();
-  //   const sphere = random.inSphere(new Float32Array(4444), { radius: 1.2 });
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+    random.inSphere(new Float32Array(4444), { radius: 1.2 })
   );
 
   useFrame((state, delta) => {

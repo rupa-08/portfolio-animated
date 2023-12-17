@@ -6,6 +6,7 @@ import {
 import { IoSchoolSharp } from 'react-icons/io5';
 
 import 'react-vertical-timeline-component/style.min.css';
+import Skills from './Skills';
 
 const Experience = () => {
   const data = [
@@ -73,7 +74,11 @@ const Experience = () => {
             icon={
               item.isWork ? (
                 <div className="flex justify-center items-center w-full h-full">
-                  <img src={item.image} alt={item.subtitle} className="w-3/5" />
+                  <img
+                    src={item.image}
+                    alt={item.subtitle}
+                    className="w-3/5 logo"
+                  />
                 </div>
               ) : (
                 <IoSchoolSharp style={{ color: '#323232' }} />
@@ -96,6 +101,7 @@ const Experience = () => {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
+      <Skills />
     </div>
   );
 };

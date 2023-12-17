@@ -18,7 +18,13 @@
   }
 
   .violet-gradient-line {
+    background: #804dee;
     background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+    background: -webkit-linear-gradient(
+      -90deg,
+      #804dee 0%,
+      rgba(60, 51, 80, 0) 100%
+    );
   }
 
   .violet-gradient {
@@ -31,6 +37,19 @@
   }
   .header-container {
     @apply flex justify-end items-center gap-8 py-6;
+  }
+
+  .logo {
+    animation: rotate 8s infinite linear;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   .hero-image {
     @apply h-11 w-11 rounded-[50%];
