@@ -65,7 +65,7 @@
   }
 
   .title {
-    @apply bg-clip-text text-transparent uppercase text-center;
+    @apply bg-clip-text text-transparent uppercase;
   }
 
   /* Intro Section CSS */
@@ -128,10 +128,58 @@
   .ball-canvas-container {
     @apply w-16 h-[53px] rounded-full flex justify-center items-center;
   }
+
+  /* Portfolio */
+  .portfolio-section-left {
+    @apply w-1/2 flex-col gap-10 items-center justify-center mt-20;
+  }
+  .portfolio-section-right {
+    @apply w-1/2 flex gap-10 justify-center items-center;
+  }
+
+  .portfolio-gradient-container {
+    @apply flex justify-center w-[55%] rounded-xl bg-gradient-to-bl from-indigo-500 via-purple-500 to-pink-500 p-[2px];
+  }
+
+  .portfolio-inner-container {
+    @apply flex items-center rounded-xl h-full w-full bg-gray-800;
+  }
+
+  .bg-tertiary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 16 48 / var(--tw-bg-opacity));
+  }
+  .shadow-card {
+    --tw-shadow: 0px 35px 120px -15px #211e35;
+    --tw-shadow-colored: 0px 35px 120px -15px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .portfolio-card {
+    background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  }
+
+  .image-container {
+    @apply flex justify-center items-center pb-5 w-full;
+  }
+  .image-overlay {
+    @apply absolute flex justify-center items-center bottom-5 bg-black bg-opacity-70 w-full transition-[0.5px] opacity-0 p-2 rounded-br-xl rounded-bl-xl;
+  }
+  .portfolio:hover .image-overlay {
+    @apply opacity-100;
+  }
+
+  .portfolio-button-text {
+    @apply bg-transparent border-none font-semibold text-center text-sm;
+  }
 }
 
 @layer components {
   .button {
     @apply border-[1px] rounded-full text-lg w-48 py-3 px-6;
+  }
+
+  .portfolio-button {
+    @apply flex items-center justify-center cursor-pointer button p-2;
   }
 }

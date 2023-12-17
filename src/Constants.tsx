@@ -95,3 +95,24 @@ export const skillsData = [
     title: 'Three JS',
   },
 ];
+
+export const portfolioProjects = [
+  {
+    image: '/images/tools-logo/react.png',
+    projectName: 'Weather App',
+    description:
+      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+    tags: ['react', 'mongo', 'express'],
+    gitLink: '',
+    liveDemoLink: '',
+  },
+  // {
+  //   image: '/images/tools-logo/react.png',
+  //   projectName: 'Weather App',
+  //   description:
+  //     'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+  //   tags: ['react', 'mongo', 'express'],
+  //   gitLink: '',
+  //   liveDemoLink: '',
+  // },
+];

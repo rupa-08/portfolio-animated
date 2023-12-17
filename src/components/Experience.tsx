@@ -5,18 +5,15 @@ import {
 import { IoSchoolSharp } from 'react-icons/io5';
 import 'react-vertical-timeline-component/style.min.css';
 
-import Skills from './Skills';
 import { workAndEducationData } from '@/Constants';
 import { motion } from 'framer-motion';
 
 const Experience = () => {
   return (
-    <div id="Work" className="experience-container">
-      <Skills />
-
+    <div id="Work" className="experience-container ">
       <div>
         <h1 className="h1-semibold title violet-gradient">Work & Education</h1>
-        <h1 className="h1-semibold text-center">Timeline</h1>
+        <h1 className="text-[45px] font-bold text-center">Timeline.</h1>
       </div>
 
       {/* Timeline */}

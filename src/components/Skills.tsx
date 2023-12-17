@@ -6,8 +6,10 @@ import TechBallCanvas from './canvas/TechBall';
 const Skills = () => {
   return (
     <div className="w-full px-16 flex-col">
-      <h1 className="h1-semibold title violet-gradient">Technical</h1>
-      <h1 className="h1-semibold text-center">Skills</h1>
+      <h1 className="h1-semibold title violet-gradient text-center">
+        Technical
+      </h1>
+      <h1 className="text-[45px] font-bold text-center">Skills.</h1>
 
       <motion.div className="skills-grid" whileInView={'visible'}>
         {skillsData?.map((item, index) => (
