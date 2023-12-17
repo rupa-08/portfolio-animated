@@ -28,7 +28,7 @@ const About = () => {
           style={{ y: textY }}
         >
           <motion.h1
-            className="h1-semibold violet-gradient bg-clip-text text-transparent"
+            className="h1-semibold title violet-gradient"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.1 }}

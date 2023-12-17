@@ -1,10 +1,10 @@
+import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { HiMiniCursorArrowRipple } from 'react-icons/hi2';
 
 import StarsCanvas from './canvas/Stars';
 import TypingAnimation from './TypingAnimation';
 import ComputerCanvas from './canvas/Computer';
-import { motion } from 'framer-motion';
 
 const Intro = () => {
   return (
@@ -26,7 +26,7 @@ const Intro = () => {
             />
           </div>
           <div className="flex flex-col justify-center items-start">
-            <h1 className="h1-semibold bg-clip-text text-transparent violet-gradient uppercase text-left font-bold">
+            <h1 className="h1-semibold text-left title violet-gradient">
               Welcome
             </h1>
             <div className="flex flex-col justify-center items-center mb-10">

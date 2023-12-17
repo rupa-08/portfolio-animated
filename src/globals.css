@@ -59,8 +59,13 @@
     @apply text-lg font-semibold text-white hover:text-gray-500 cursor-pointer;
   }
 
+  /* body */
   .container {
     @apply px-16 py-5 h-[100vh];
+  }
+
+  .title {
+    @apply bg-clip-text text-transparent uppercase text-center;
   }
 
   /* Intro Section CSS */
@@ -100,7 +105,7 @@
 
   /* Experience CSS */
   .experience-container {
-    @apply flex flex-col justify-center items-center gap-16 mt-28;
+    @apply flex flex-col justify-center items-center gap-16 mt-20;
   }
 
   .experience-card-title {
@@ -108,6 +113,20 @@
   }
   .experience-card-desc {
     @apply text-sm font-semibold text-[#DCDCDC];
+  }
+
+  /* Skills */
+
+  .skills-grid {
+    @apply w-full grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 mt-20 gap-5;
+  }
+
+  .skill {
+    @apply flex w-full gap-5 mb-5 justify-center items-center;
+  }
+
+  .ball-canvas-container {
+    @apply w-16 h-[53px] rounded-full flex justify-center items-center;
   }
 }
 

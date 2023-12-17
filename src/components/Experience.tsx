@@ -2,60 +2,26 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
-
 import { IoSchoolSharp } from 'react-icons/io5';
-
 import 'react-vertical-timeline-component/style.min.css';
+
 import Skills from './Skills';
+import { workAndEducationData } from '@/Constants';
+import { motion } from 'framer-motion';
 
 const Experience = () => {
-  const data = [
-    {
-      title: 'Software Developer',
-      subtitle: 'Frost Digital Ventures, Kalanki, Kathmandu',
-      date: 'January 2023 - Present',
-      descirption: ['Roles', 'Develop awesome software.'],
-      image: '/images/work/FDV.png',
-      isWork: true,
-    },
-
-    {
-      title: 'Web Developer Internship(ReactJS)',
-      subtitle: 'Naxa, Baluwatar, Kathmandu',
-      date: 'August 2022 - November 2022',
-      descirption: ['Roles', 'Develop awesome software.'],
-      image: '/images/work/naxa.png',
-      isWork: true,
-    },
-    {
-      title: 'B.sc.(Hons) in Computing',
-      subtitle: 'Islington College, London Metopolitian University',
-      date: 'August 2022',
-      descirption: ['Bachelor Degree'],
-      image: '/images/work/naxa.png',
-      isWork: false,
-    },
-
-    {
-      title: 'Science',
-      subtitle: 'Trinity Internation College, Kamalpokhari',
-      date: 'August 2019',
-      descirption: [' High School'],
-      image: '/images/work/FDV.png',
-      isWork: false,
-    },
-  ];
   return (
     <div id="Work" className="experience-container">
+      <Skills />
+
       <div>
-        <h1 className="h1-semibold violet-gradient bg-clip-text text-transparent uppercase">
-          Work & Education
-        </h1>
+        <h1 className="h1-semibold title violet-gradient">Work & Education</h1>
         <h1 className="h1-semibold text-center">Timeline</h1>
       </div>
+
       {/* Timeline */}
       <VerticalTimeline>
-        {data?.map((item, index) => (
+        {workAndEducationData?.map((item, index) => (
           <VerticalTimelineElement
             key={index}
             className="vertical-timeline-element--work"
@@ -94,14 +60,18 @@ const Experience = () => {
             </h4>
 
             {item.descirption.map((item, index) => (
-              <>
-                <p key={index}>{item}</p>
-              </>
+              <motion.p
+                key={index}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 2, delay: 0.5 + index * 0.2 }}
+              >
+                {item}
+              </motion.p>
             ))}
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
-      <Skills />
     </div>
   );
 };
