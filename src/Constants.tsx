@@ -99,20 +99,56 @@ export const skillsData = [
 export const portfolioProjects = [
   {
     image: '/images/tools-logo/react.png',
-    projectName: 'Weather App',
+    projectName: 'Sociogram',
     description:
-      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
-    tags: ['react', 'mongo', 'express'],
+      'Fullstack application that allows user to share their post and connect with each other.',
+    tags: ['ReactJs', 'Appwrite', 'React Query', 'Tailwind', 'Typescript'],
     gitLink: '',
     liveDemoLink: '',
   },
-  // {
-  //   image: '/images/tools-logo/react.png',
-  //   projectName: 'Weather App',
-  //   description:
-  //     'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
-  //   tags: ['react', 'mongo', 'express'],
-  //   gitLink: '',
-  //   liveDemoLink: '',
-  // },
+  {
+    image: '/images/tools-logo/react.png',
+    projectName: 'Aquamart Backend',
+    description:
+      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+    tags: ['Node', 'ExpressJs', 'Mongo'],
+    gitLink: '',
+    liveDemoLink: '',
+  },
+  {
+    image: '/images/tools-logo/react.png',
+    projectName: 'Auamart Frontend',
+    description:
+      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+    tags: ['ReactJs', 'Tailwind', 'Typescript'],
+    gitLink: '',
+    liveDemoLink: '',
+  },
+  {
+    image: '/images/tools-logo/react.png',
+    projectName: 'Wattpad Book',
+    description:
+      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+    tags: ['ReactJs', 'Javascript', 'Firebase'],
+    gitLink: '',
+    liveDemoLink: '',
+  },
+  {
+    image: '/images/tools-logo/react.png',
+    projectName: 'Movie Recommendation System',
+    description:
+      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+    tags: ['Python', 'Numpy'],
+    gitLink: '',
+    liveDemoLink: '',
+  },
+  {
+    image: '/images/tools-logo/react.png',
+    projectName: 'Eateries',
+    description:
+      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+    tags: ['Flutter', 'Django'],
+    gitLink: '',
+    liveDemoLink: '',
+  },
 ];

@@ -130,12 +130,6 @@
   }
 
   /* Portfolio */
-  .portfolio-section-left {
-    @apply w-1/2 flex-col gap-10 items-center justify-center mt-20;
-  }
-  .portfolio-section-right {
-    @apply w-1/2 flex gap-10 justify-center items-center;
-  }
 
   .portfolio-gradient-container {
     @apply flex justify-center w-[55%] rounded-xl bg-gradient-to-bl from-indigo-500 via-purple-500 to-pink-500 p-[2px];

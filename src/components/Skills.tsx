@@ -5,11 +5,23 @@ import TechBallCanvas from './canvas/TechBall';
 
 const Skills = () => {
   return (
-    <div className="w-full px-16 flex-col">
-      <h1 className="h1-semibold title violet-gradient text-center">
+    <div className="w-full flex-col">
+      <motion.h1
+        className="h1-semibold title violet-gradient text-center"
+        initial={{ opacity: 0, x: -300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
         Technical
-      </h1>
-      <h1 className="text-[45px] font-bold text-center">Skills.</h1>
+      </motion.h1>
+      <motion.h1
+        className="text-[45px] font-bold text-center"
+        initial={{ opacity: 0, x: -300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
+        Skills.
+      </motion.h1>
 
       <motion.div className="skills-grid" whileInView={'visible'}>
         {skillsData?.map((item, index) => (
