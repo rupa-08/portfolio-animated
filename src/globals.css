@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply bg-gray-950 text-gray-50 min-h-screen pb-7;
+    @apply bg-gray-950 text-gray-50 min-h-screen pb-7 overflow-x-hidden;
   }
 }
 
@@ -165,6 +165,13 @@
 
   .portfolio-button-text {
     @apply bg-transparent border-none font-semibold text-center text-sm;
+  }
+  /* Contact */
+  .toast-message {
+    background-color: darkblue;
+    font-size: 20px;
+    width: 34vw;
+    padding: 30px 20px;
   }
 }
 

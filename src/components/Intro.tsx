@@ -51,6 +51,7 @@ const Intro = () => {
           <ComputerCanvas />
         </div>
       </div>
+
       <StarsCanvas />
     </div>
   );

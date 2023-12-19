@@ -5,9 +5,9 @@ import Carousel from './Carousel';
 
 const Portfolio = () => {
   return (
-    <div className="container flex-col gap-6" id="Portfolio">
+    <div className="container" id="Portfolio">
       <div
-        className="flex sm:flex-col md:flex-row my-20"
+        className="flex sm:flex-col md:flex-row mt-20"
         style={{
           display: 'flex',
         }}
@@ -88,8 +88,6 @@ const Portfolio = () => {
           <Carousel />
         </motion.div>
       </div>
-
-      <Skills />
     </div>
   );
 };
