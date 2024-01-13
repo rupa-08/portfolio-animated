@@ -94,6 +94,10 @@
   .black-glow-effect {
     filter: drop-shadow(0 0 10px #4d4d4a);
   }
+
+  .purple-glow-effect {
+    filter: drop-shadow(0 0 10px #05000f);
+  }
   .about {
     @apply w-1/2 flex flex-col gap-10 max-lg:w-full max-lg:my-20 max-sm:items-center;
   }
