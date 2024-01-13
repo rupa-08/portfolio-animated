@@ -46,7 +46,7 @@ const TypingAnimation = () => {
   return (
     <div>
       {displayedText !== undefined && (
-        <h1 className="h1-semibold text-gray-500">
+        <h1 className="text-2xl font-medium text-gray-500">
           <motion.span
             className="inline-block mr-[0.1em]"
             initial={{ opacity: 0 }}

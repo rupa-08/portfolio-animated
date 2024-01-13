@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 const Experience = () => {
   return (
-    <div id="Work" className="experience-container max-sm:pt-72">
+    <div id="Work" className="experience-container">
       <div>
         <h1 className="h1-semibold title violet-gradient">Work & Education</h1>
         <h1 className="text-[45px] font-bold text-center">Timeline.</h1>

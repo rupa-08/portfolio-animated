@@ -14,7 +14,7 @@
 
 @layer utilities {
   .h1-semibold {
-    @apply lg:text-3xl sm:text-lg font-semibold;
+    @apply text-4xl max-xl:text-3xl font-semibold;
   }
 
   .violet-gradient-line {
@@ -76,7 +76,7 @@
   /* About Section CSS */
 
   .about-gradient {
-    @apply flex justify-center  h-[50%] aspect-square rounded-t-full bg-gradient-to-br from-pink-500 via-[#ffb77d] to-purple-500 p-[3px] max-w-max max-sm:h-[100%]  max-sm:p-0;
+    @apply flex justify-center h-[60%] aspect-square rounded-t-full bg-gradient-to-br from-pink-500 via-[#ffb77d] to-purple-500 p-[3px] max-w-max max-sm:h-[100%]  max-sm:p-0;
   }
 
   .about-image-container {
@@ -86,12 +86,32 @@
   .about-image {
     @apply object-cover rounded-tl-full rounded-tr-full translate-x-16 translate-y-8 max-sm:translate-x-0 max-sm:translate-y-0 hover:translate-x-0 hover:translate-y-0;
   }
+
+  .glow-effect {
+    filter: drop-shadow(0 0 10px #ffb77d);
+  }
+
+  .black-glow-effect {
+    filter: drop-shadow(0 0 10px #4d4d4a);
+  }
   .about {
-    @apply w-1/2 flex flex-col gap-10 max-md:w-full max-md:my-20 max-sm:items-center;
+    @apply w-1/2 flex flex-col gap-10 max-lg:w-full max-lg:my-20 max-sm:items-center;
+  }
+
+  .achievement-container {
+    @apply flex gap-5 max-sm:gap-4 max-sm:flex-col-reverse w-full;
+  }
+
+  .achievement-card {
+    @apply py-5 px-9 border-2 border-gray-800 rounded-xl flex flex-col justify-center items-center black-glow-effect text-center max-lg:px-6 max-sm:w-full max-sm:px-0;
+  }
+
+  .achievement-icon {
+    @apply text-3xl max-sm:text-lg;
   }
 
   .about-desc {
-    @apply text-xl text-justify;
+    @apply text-xl text-justify max-sm:text-base;
   }
 
   /* Overlay */
@@ -113,7 +133,7 @@
 
   /* Experience CSS */
   .experience-container {
-    @apply flex flex-col justify-center items-center gap-16 mt-20;
+    @apply flex flex-col justify-center items-center gap-16 max-sm:mt-[790px] max-lg:mt-[600px] max-xl:mt-40 mt-16;
   }
 
   .experience-card-title {
