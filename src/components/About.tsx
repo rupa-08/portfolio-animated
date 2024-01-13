@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { FcMindMap } from 'react-icons/fc';
 import { FaUserGraduate } from 'react-icons/fa6';
 import { MdOutlineWorkspacePremium } from 'react-icons/md';
@@ -7,44 +8,79 @@ import image from '../../public/images/hero-img/hero-img.jpg';
 const About = () => {
   return (
     <div className="container flex justify-between max-lg:flex-col" id="About">
-      <div className="about-gradient">
+      <motion.div
+        className="about-gradient"
+        initial={{ y: 450, opacity: 0 }}
+        whileInView={{ y: 20, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         <div className="about-image-container">
           <img src={image} alt="image" className="about-image glow-effect" />
         </div>
-      </div>
-      <div className="about">
+      </motion.div>
+      <motion.div
+        className="about"
+        initial={{ y: 450, opacity: 0 }}
+        whileInView={{ y: 20, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1 }}
+      >
         <div>
           <h1 className="h1-semibold title violet-gradient">INTRODUCTION</h1>
           <h1 className="h1-semibold">Overview.</h1>
         </div>
         <div className="achievement-container">
-          <div className="achievement-card">
+          <motion.div
+            className="achievement-card"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 1.5 }}
+          >
             <MdOutlineWorkspacePremium className="achievement-icon" />
             <p>Experience</p>
             <p>1.5 + years.</p>
-          </div>
-          <div className="achievement-card">
+          </motion.div>
+          <motion.div
+            className="achievement-card"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 2 }}
+          >
             <FcMindMap className="achievement-icon" />
             <p>Completed</p>
             <p>20 + projects.</p>
-          </div>
-          <div className="achievement-card">
+          </motion.div>
+          <motion.div
+            className="achievement-card"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 2.4 }}
+          >
             <FaUserGraduate className="achievement-icon" />
             <p>Education</p>
             <p>Post-Graduate</p>
-          </div>
+          </motion.div>
         </div>
 
-        <p className="about-desc">
+        <motion.p
+          className="about-desc"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.3, delay: 2.5 }}
+        >
           I am a software developer specializing in frontend technologies within
           the dynamic IT sector, embrace and thrive in a team environment, and
           highly value punctuality. Experience in crafting user-friendly
           interfaces with skills in JavaScript, React, HTML, and CSS.
-        </p>
-        <button className="button violet-gradient border-purple-950 cursor-pointer">
+        </motion.p>
+        <motion.button
+          className="button violet-gradient border-purple-950 cursor-pointer"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.3, delay: 2.6 }}
+        >
           <a className="cursor-pointer"> Download CV</a>
-        </button>
-      </div>
+        </motion.button>
+      </motion.div>
     </div>
   );
 };

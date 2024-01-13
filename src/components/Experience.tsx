@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -6,7 +7,6 @@ import { IoSchoolSharp } from 'react-icons/io5';
 import 'react-vertical-timeline-component/style.min.css';
 
 import { workAndEducationData } from '@/Constants';
-import { motion } from 'framer-motion';
 
 const Experience = () => {
   return (
