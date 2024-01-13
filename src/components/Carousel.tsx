@@ -20,7 +20,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="w-[50vw] relative">
+    <div className="w-[50vw] max-md:w-full relative">
       <div
         className="flex"
         style={{
@@ -31,7 +31,7 @@ const Carousel = () => {
         {portfolioProjects.map((item, index) => (
           <div
             key={index}
-            className="w-[50vw] flex flex-grow-0 flex-shrink-0 flex-basis-auto justify-center items-center"
+            className="w-[50vw] max-md:w-full flex flex-grow-0 flex-shrink-0 flex-basis-auto justify-center items-center max-md:px-11"
           >
             <div className="portfolio-gradient-container" key={index}>
               <div className="bg-tertiary portfolio-inner-container">
@@ -99,10 +99,16 @@ const Carousel = () => {
         ))}
       </div>
 
-      <div onClick={handlePrevClick} className="absolute top-1/2 left-20 ">
+      <div
+        onClick={handlePrevClick}
+        className="absolute top-1/2 left-20 max-md:left-[-2px]"
+      >
         <CiCircleChevLeft className="text-white text-3xl cursor-pointer" />
       </div>
-      <div onClick={handleNextClick} className="absolute top-1/2 right-20 ">
+      <div
+        onClick={handleNextClick}
+        className="absolute top-1/2 right-20 max-md:right-[-2px]"
+      >
         <CiCircleChevRight className="text-white text-3xl cursor-pointer" />
       </div>
     </div>

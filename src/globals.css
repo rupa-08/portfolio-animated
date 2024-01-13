@@ -61,7 +61,7 @@
 
   /* body */
   .container {
-    @apply px-16 py-5 h-[100vh];
+    @apply px-16 py-5 h-screen;
   }
 
   .title {
@@ -132,7 +132,7 @@
   /* Portfolio */
 
   .portfolio-gradient-container {
-    @apply flex justify-center w-[55%] rounded-xl bg-gradient-to-bl from-indigo-500 via-purple-500 to-pink-500 p-[2px];
+    @apply flex justify-center w-[55%] max-md:w-full rounded-xl bg-gradient-to-bl from-indigo-500 via-purple-500 to-pink-500 p-[2px];
   }
 
   .portfolio-inner-container {

@@ -6,8 +6,8 @@ import StarsCanvas from './canvas/Stars';
 
 const Skills = () => {
   return (
-    <div className="w-full flex-col px-16 py-16 relative overflow-hidden">
-      <div className="w-full flex-col px-16 ">
+    <div className="w-full flex-col py-16 relative overflow-hidden">
+      <div className="w-full flex-col px-16 max-md:px-0">
         <motion.h1
           className="h1-semibold title violet-gradient text-center"
           initial={{ opacity: 0, x: -300 }}

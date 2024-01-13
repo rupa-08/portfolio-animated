@@ -1,22 +1,16 @@
 import { motion } from 'framer-motion';
 
-import Skills from './Skills';
 import Carousel from './Carousel';
+import Skills from './Skills';
+import Contact from './Contact';
 
 const Portfolio = () => {
   return (
     <div className="container" id="Portfolio">
-      <div
-        className="flex sm:flex-col md:flex-row mt-20"
-        style={{
-          display: 'flex',
-        }}
-      >
+      <div className="flex max-md:flex-col my-24">
         <motion.div
           whileInView={'visible'}
-          style={{
-            width: '50vw',
-          }}
+          className="w-1/2 max-md:w-full max-md:my-10 flex flex-col max-md:items-center"
         >
           <motion.h1
             className="h1-semibold title violet-gradient"
@@ -77,10 +71,7 @@ const Portfolio = () => {
           </motion.button>
         </motion.div>
         <motion.div
-          style={{
-            width: '50vw',
-            overflow: 'hidden',
-          }}
+          className="overflow-hidden w-1/2 max-md:w-full"
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 1 }}
@@ -88,6 +79,10 @@ const Portfolio = () => {
           <Carousel />
         </motion.div>
       </div>
+
+      <Skills />
+
+      <Contact />
     </div>
   );
 };
