@@ -25,7 +25,7 @@ const Intro = () => {
               className="w-1 sm:h-80 h-40 violet-gradient-line"
             />
           </div>
-          <div className="flex flex-col justify-center items-start">
+          <div className="flex flex-col justify-center items-start gap-4">
             <h1 className="h1-semibold text-left title violet-gradient">
               Welcome
             </h1>
