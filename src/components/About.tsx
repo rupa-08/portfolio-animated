@@ -61,25 +61,15 @@ const About = () => {
           </motion.div>
         </div>
 
-        <motion.p
-          className="about-desc"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.3, delay: 2.5 }}
-        >
+        <p className="about-desc">
           I am a software developer specializing in frontend technologies within
           the dynamic IT sector, embrace and thrive in a team environment, and
           highly value punctuality. Experience in crafting user-friendly
           interfaces with skills in JavaScript, React, HTML, and CSS.
-        </motion.p>
-        <motion.button
-          className="button violet-gradient border-purple-950 cursor-pointer"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.3, delay: 2.6 }}
-        >
+        </p>
+        <button className="button violet-gradient border-purple-950 cursor-pointer">
           <a className="cursor-pointer"> Download CV</a>
-        </motion.button>
+        </button>
       </motion.div>
     </div>
   );

@@ -90,6 +90,11 @@ export const skillsData = [
     title: 'Mongo DB',
   },
   {
+    image: '/images/tools-logo/zustand.png',
+    level: 56,
+    title: 'Zustand',
+  },
+  {
     image: '/images/tools-logo/threeJs.png',
     level: 30,
     title: 'Three JS',
