@@ -38,11 +38,16 @@ const Carousel = () => {
                 <div className="flex flex-col w-full px-3 pt-3 pb-7">
                   {/* image section */}
                   <div className="portfolio relative cursor-pointer ">
-                    <div className="image-container">
+                    <div className="image-container bg-[#1b1b2c] rounded-xl">
                       <img
                         src={item.image}
                         alt={item.projectName}
-                        className="w-full aspect-video rounded-xl image"
+                        className={`w-full aspect-video rounded-xl image  ${
+                          item.projectName === 'E-book' ||
+                          item.projectName === 'Eateries'
+                            ? 'object-contain'
+                            : 'object-cover'
+                        }`}
                       />
                     </div>
                     <div className="image-overlay">
@@ -50,7 +55,7 @@ const Carousel = () => {
                         <a
                           href={item.gitLink}
                           target="blank"
-                          className="portfolio-button"
+                          className="portfolio-button max-w-max px-5"
                         >
                           <button className="portfolio-button-text">
                             Github
@@ -60,7 +65,7 @@ const Carousel = () => {
                           <a
                             href={item?.liveDemoLink}
                             target="blank"
-                            className="portfolio-button"
+                            className="portfolio-button max-w-max px-5"
                           >
                             <button className="portfolio-button-text">
                               Demo
@@ -71,7 +76,7 @@ const Carousel = () => {
                     </div>
                   </div>
 
-                  <p className="font-semibold text-base text-left">
+                  <p className="font-semibold text-base text-left pt-5">
                     {item.projectName}
                   </p>
                   <p className="text-base text-left py-3">{item.description}</p>

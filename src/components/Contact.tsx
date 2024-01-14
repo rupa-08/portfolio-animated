@@ -131,8 +131,8 @@ function Contact() {
                 <MeshDistortMaterial
                   color="#8e63eb"
                   attach="material"
-                  distort={0.25}
-                  speed={2}
+                  distort={0.4}
+                  speed={1.5}
                 />
               </Sphere>
             </Suspense>

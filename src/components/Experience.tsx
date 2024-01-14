@@ -3,7 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
-import { IoSchoolSharp } from 'react-icons/io5';
+import { FaUserGraduate } from 'react-icons/fa6';
 import 'react-vertical-timeline-component/style.min.css';
 
 import { workAndEducationData } from '@/Constants';
@@ -44,7 +44,7 @@ const Experience = () => {
                   />
                 </div>
               ) : (
-                <IoSchoolSharp style={{ color: '#323232' }} />
+                <FaUserGraduate style={{ color: '#211e35' }} />
               )
             }
           >
@@ -56,16 +56,23 @@ const Experience = () => {
               {item.subtitle}
             </h4>
 
-            {item.descirption.map((item, index) => (
-              <motion.p
-                key={index}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 2, delay: 0.5 + index * 0.2 }}
-              >
-                {item}
-              </motion.p>
-            ))}
+            <h3 className="vertical-timeline-element-title experience-card-title py-4">
+              Roles
+            </h3>
+
+            <ul>
+              {item.descirption.map((item, index) => (
+                <motion.li
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: 0.2 + index * 0.2 }}
+                  className="list-disc ml-[1em] py-1"
+                >
+                  {item}
+                </motion.li>
+              ))}
+            </ul>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>

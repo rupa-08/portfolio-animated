@@ -3,7 +3,17 @@ export const workAndEducationData = [
     title: 'Software Developer',
     subtitle: 'Frost Digital Ventures, Kalanki, Kathmandu',
     date: 'January 2023 - Present',
-    descirption: ['Roles', 'Develop awesome software.'],
+    descirption: [
+      'Building dynamic and interactive user interfaces with JavaScript frameworks (e.g., React JS, React Native, Vue.js).',
+      'Maintain code standards, consistency, and formats by using tools like ESLint, Husky, and Prettier.',
+      'Enhancing web application functionality by intergrating third-party APIs and services.',
+
+      'Worked with UI/UX designers to translate design mockups into functional and visually appealing interfaces.',
+
+      'Coordinating with Team Lead, Project Manager, QA, and other developers.',
+
+      'Ensuring a streamlined development process with effective branching strategies and regular commits in git.',
+    ],
     image: '/images/work/FDV.png',
     isWork: true,
   },
@@ -12,7 +22,13 @@ export const workAndEducationData = [
     title: 'Web Developer Internship(ReactJS)',
     subtitle: 'Naxa, Baluwatar, Kathmandu',
     date: 'August 2022 - November 2022',
-    descirption: ['Roles', 'Develop awesome software.'],
+    descirption: [
+      'Implementing RESTful API’s on the frontend.',
+      'Maintain existing system by fixing bugs.',
+      'Following coding standards and practices to maintain code consistency and readability.',
+      'Building a responsive website and applying the Redux Toolkit to effectively manage states.',
+      'Employing tailwind CSS to enhance code maintainability and optimize style methods.',
+    ],
     image: '/images/work/naxa.png',
     isWork: true,
   },
@@ -21,7 +37,7 @@ export const workAndEducationData = [
     subtitle: 'Islington College, London Metopolitian University',
     date: 'August 2022',
     descirption: ['Bachelor Degree'],
-    image: '/images/work/naxa.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/4537/4537088.png',
     isWork: false,
   },
 
@@ -30,7 +46,7 @@ export const workAndEducationData = [
     subtitle: 'Trinity Internation College, Kamalpokhari',
     date: 'August 2019',
     descirption: [' High School'],
-    image: '/images/work/FDV.png',
+    image: 'https://cdn-icons-png.flaticon.com/512/4537/4537088.png',
     isWork: false,
   },
 ];
@@ -103,57 +119,59 @@ export const skillsData = [
 
 export const portfolioProjects = [
   {
-    image: '/images/tools-logo/react.png',
-    projectName: 'Sociogram',
+    image: '/images/portfolio/aquamart.png',
+    projectName: 'Auamart Frontend',
     description:
-      'Fullstack application that allows user to share their post and connect with each other.',
-    tags: ['ReactJs', 'Appwrite', 'React Query', 'Tailwind', 'Typescript'],
-    gitLink: '',
+      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+    tags: ['ReactJS', 'Tailwind', 'Typescript', 'Zustand', 'Vite'],
+    gitLink: 'https://github.com/rupa-08/aquamart-frontend',
     liveDemoLink: '',
   },
   {
-    image: '/images/tools-logo/react.png',
+    image: '/images/portfolio/sociogram.png',
+    projectName: 'Sociogram',
+    description:
+      'Fullstack application that allows user to share their post and connect with each other.',
+    tags: ['ReactJS', 'Appwrite', 'React Query', 'Tailwind', 'Typescript'],
+    gitLink: '',
+    liveDemoLink:
+      'https://sociogram-6lw6hr3t9-rupas-projects-243905c9.vercel.app/',
+  },
+  {
+    image: '/images/portfolio/aquamart-backend.png',
     projectName: 'Aquamart Backend',
     description:
       'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
     tags: ['Node', 'ExpressJs', 'Mongo'],
-    gitLink: '',
+    gitLink: 'https://github.com/rupa-08/aquamart-backend',
     liveDemoLink: '',
   },
+
   {
     image: '/images/tools-logo/react.png',
-    projectName: 'Auamart Frontend',
+    projectName: 'Insta Chat',
     description:
       'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
-    tags: ['ReactJs', 'Tailwind', 'Typescript'],
-    gitLink: '',
+    tags: ['Vue.js', 'Firebase'],
+    gitLink: 'https://github.com/rupa-08/InstaChat',
     liveDemoLink: '',
   },
   {
-    image: '/images/tools-logo/react.png',
-    projectName: 'Wattpad Book',
+    image: '/images/portfolio/e-book.jpg',
+    projectName: 'E-book',
     description:
       'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
-    tags: ['ReactJs', 'Javascript', 'Firebase'],
-    gitLink: '',
+    tags: ['React Native', 'Expo'],
+    gitLink: 'https://github.com/rupa-08/E-book',
     liveDemoLink: '',
   },
   {
-    image: '/images/tools-logo/react.png',
-    projectName: 'Movie Recommendation System',
-    description:
-      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
-    tags: ['Python', 'Numpy'],
-    gitLink: '',
-    liveDemoLink: '',
-  },
-  {
-    image: '/images/tools-logo/react.png',
+    image: '/images/portfolio/Eateries.png',
     projectName: 'Eateries',
     description:
       'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
     tags: ['Flutter', 'Django'],
-    gitLink: '',
+    gitLink: 'https://github.com/rupa-08/Eateries',
     liveDemoLink: '',
   },
 ];

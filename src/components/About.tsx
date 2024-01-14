@@ -10,18 +10,25 @@ const About = () => {
     <div className="container flex justify-between max-lg:flex-col" id="About">
       <motion.div
         className="about-gradient"
-        initial={{ y: 450, opacity: 0 }}
-        whileInView={{ y: 20, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.3, delay: 0.2 }}
       >
         <div className="about-image-container">
-          <img src={image} alt="image" className="about-image glow-effect" />
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            src={image}
+            alt="image"
+            className="about-image glow-effect"
+          />
         </div>
       </motion.div>
       <motion.div
         className="about"
-        initial={{ y: 450, opacity: 0 }}
-        whileInView={{ y: 20, opacity: 1 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
         <div>
@@ -33,7 +40,7 @@ const About = () => {
             className="achievement-card"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: 1.5 }}
+            transition={{ duration: 1, delay: 1.3 }}
           >
             <MdOutlineWorkspacePremium className="achievement-icon" />
             <p>Experience</p>
@@ -43,7 +50,7 @@ const About = () => {
             className="achievement-card"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: 2 }}
+            transition={{ duration: 1, delay: 1.7 }}
           >
             <FcMindMap className="achievement-icon" />
             <p>Completed</p>
@@ -53,7 +60,7 @@ const About = () => {
             className="achievement-card"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: 2.4 }}
+            transition={{ duration: 1, delay: 2 }}
           >
             <FaUserGraduate className="achievement-icon" />
             <p>Education</p>
@@ -61,15 +68,25 @@ const About = () => {
           </motion.div>
         </div>
 
-        <p className="about-desc">
+        <motion.p
+          className="about-desc"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
           I am a software developer specializing in frontend technologies within
           the dynamic IT sector, embrace and thrive in a team environment, and
           highly value punctuality. Experience in crafting user-friendly
           interfaces with skills in JavaScript, React, HTML, and CSS.
-        </p>
-        <button className="button violet-gradient border-purple-950 cursor-pointer">
+        </motion.p>
+        <motion.button
+          className="button violet-gradient border-purple-950 cursor-pointer"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
           <a className="cursor-pointer"> Download CV</a>
-        </button>
+        </motion.button>
       </motion.div>
     </div>
   );
