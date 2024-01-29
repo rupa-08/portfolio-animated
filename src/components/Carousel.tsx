@@ -8,15 +8,15 @@ const Carousel = () => {
   const alternatingColor = ['#29AB87', '#6CA0DC', '#F5761A'];
 
   const handlePrevClick = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex > 0 ? prevIndex - 1 : portfolioProjects.length - 1
-    );
+    if (currentIndex > 0) {
+      setCurrentIndex((prevIndex) => prevIndex - 1);
+    }
   };
 
   const handleNextClick = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex < portfolioProjects.length - 1 ? prevIndex + 1 : 0
-    );
+    if (currentIndex < portfolioProjects.length - 1) {
+      setCurrentIndex((prevIndex) => prevIndex + 1);
+    }
   };
 
   return (
@@ -79,12 +79,14 @@ const Carousel = () => {
                   <p className="font-semibold text-base text-left pt-5">
                     {item.projectName}
                   </p>
-                  <p className="text-base text-left py-3">{item.description}</p>
+                  <p className="text-base text-left py-3 max-sm:hidden">
+                    {item.description}
+                  </p>
                   <div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3">
                       {item.tags.map((label, index) => (
                         <p
-                          className="text-base text-left"
+                          className="text-base text-left max-sm:text-xs"
                           key={index}
                           style={{
                             color: `${
@@ -106,15 +108,23 @@ const Carousel = () => {
 
       <div
         onClick={handlePrevClick}
-        className="absolute top-1/2 left-20 max-md:left-[-2px]"
+        className={`absolute top-1/2 left-20 max-md:left-[-2px] ${
+          currentIndex === 0
+            ? 'cursor-not-allowed text-gray-700'
+            : 'cursor-pointer text-white'
+        }`}
       >
-        <CiCircleChevLeft className="text-white text-3xl cursor-pointer" />
+        <CiCircleChevLeft className="text-3xl" />
       </div>
       <div
         onClick={handleNextClick}
-        className="absolute top-1/2 right-20 max-md:right-[-2px]"
+        className={`absolute top-1/2 right-20 max-md:right-[-2px] ${
+          currentIndex === portfolioProjects.length - 1
+            ? 'cursor-not-allowed text-gray-700'
+            : 'cursor-pointer text-white'
+        }`}
       >
-        <CiCircleChevRight className="text-white text-3xl cursor-pointer" />
+        <CiCircleChevRight className="text-3xl" />
       </div>
     </div>
   );

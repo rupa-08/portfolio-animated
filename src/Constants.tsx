@@ -110,19 +110,19 @@ export const skillsData = [
     level: 56,
     title: 'Zustand',
   },
-  {
-    image: '/images/tools-logo/threeJs.png',
-    level: 30,
-    title: 'Three JS',
-  },
+  // {
+  //   image: '/images/tools-logo/threeJs.png',
+  //   level: 30,
+  //   title: 'Three JS',
+  // },
 ];
 
 export const portfolioProjects = [
   {
     image: '/images/portfolio/aquamart.png',
-    projectName: 'Auamart Frontend',
+    projectName: 'Auamart',
     description:
-      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+      'Aquamart is a sleek car selling website built with React and Vite, ensuring a fast and dynamic user interface. The design is powered by Tailwind CSS, providing modern design and visually appealing layout.',
     tags: ['ReactJS', 'Tailwind', 'Typescript', 'Zustand', 'Vite'],
     gitLink: 'https://github.com/rupa-08/aquamart-frontend',
     liveDemoLink: '',
@@ -131,7 +131,7 @@ export const portfolioProjects = [
     image: '/images/portfolio/sociogram.png',
     projectName: 'Sociogram',
     description:
-      'Fullstack application that allows user to share their post and connect with each other.',
+      'Explore Sociogram, where moments become art. With React frontend, Appwrite backend, TypeScript, and Tailwind CSS, it seamlessly blends innovation and elegance. Dive into a smooth experience, effortlessly sharing and exploring diverse pictures.',
     tags: ['ReactJS', 'Appwrite', 'React Query', 'Tailwind', 'Typescript'],
     gitLink: '',
     liveDemoLink:
@@ -141,17 +141,17 @@ export const portfolioProjects = [
     image: '/images/portfolio/aquamart-backend.png',
     projectName: 'Aquamart Backend',
     description:
-      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+      'Aquamart backend, developed with Express and MongoDB, ensures a powerful and efficient foundation for the car-selling website. It seamlessly supports the sleek frontend design, providing a smooth user experience.',
     tags: ['Node', 'ExpressJs', 'Mongo'],
     gitLink: 'https://github.com/rupa-08/aquamart-backend',
     liveDemoLink: '',
   },
 
   {
-    image: '/images/tools-logo/react.png',
+    image: '/images/portfolio/insta-chat.png',
     projectName: 'Insta Chat',
     description:
-      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+      'Meet Insta Chat – the ultimate chat app powered by Vue.js and Firebase. Effortlessly connect with multiple people in real-time. Simple, secure, and instant messaging, redefined.',
     tags: ['Vue.js', 'Firebase'],
     gitLink: 'https://github.com/rupa-08/InstaChat',
     liveDemoLink: '',
@@ -160,7 +160,7 @@ export const portfolioProjects = [
     image: '/images/portfolio/e-book.jpg',
     projectName: 'E-book',
     description:
-      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+      'Discover, read, and filter books effortlessly with our E-Book App. Built on Expo React Native, it offers a seamless mobile reading experience, putting a vast library at your fingertips.',
     tags: ['React Native', 'Expo'],
     gitLink: 'https://github.com/rupa-08/E-book',
     liveDemoLink: '',
@@ -169,7 +169,7 @@ export const portfolioProjects = [
     image: '/images/portfolio/Eateries.png',
     projectName: 'Eateries',
     description:
-      'A weather app that provides current and forecasted weather conditions for any city in the world. The user can search by city name or',
+      'Flutter frontend, Django backend. Enjoy discounted items, creating a unique dining experience. Elevate your culinary adventures with our dynamic mobile platform.',
     tags: ['Flutter', 'Django'],
     gitLink: 'https://github.com/rupa-08/Eateries',
     liveDemoLink: '',

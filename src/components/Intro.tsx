@@ -10,10 +10,10 @@ const Intro = () => {
   return (
     <div>
       <div id="Intro" className="container intro">
-        <div className="w-[44%] flex gap-12">
+        <div className="w-[44%] flex gap-12 max-md:w-full">
           <div className="flex flex-col justify-center items-center">
             <motion.div
-              className="w-5 h-5 rounded-full bg-[#915eff]"
+              className="w-5 h-5 rounded-full bg-[#915eff] max-sm:hidden"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.9 }}
@@ -22,7 +22,7 @@ const Intro = () => {
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="w-1 sm:h-80 h-40 violet-gradient-line"
+              className="w-1 max-md:h-30 h-40 violet-gradient-line max-sm:hidden"
             />
           </div>
           <div className="flex flex-col justify-center items-start gap-4">
@@ -39,15 +39,15 @@ const Intro = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 1 }}
               >
-                <button className="bg-transparent border-none font-semibold">
+                <button className="bg-transparent border-none font-semibold max-md:text-sm">
                   Let's Connect
                 </button>
-                <HiMiniCursorArrowRipple className="text-lg" />
+                <HiMiniCursorArrowRipple className="text-lg max-md:text-sm" />
               </motion.div>
             </Link>
           </div>
         </div>
-        <div className="w-[66%] flex justify-center items-center">
+        <div className="w-[66%] flex justify-center items-center max-md:w-[100%]">
           <ComputerCanvas />
         </div>
       </div>

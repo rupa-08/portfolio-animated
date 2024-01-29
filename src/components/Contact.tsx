@@ -1,20 +1,39 @@
-import { FormEvent, useRef, useState, Suspense } from 'react';
+import { FormEvent, useRef, useState, Suspense, useEffect } from 'react';
 
 import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
 import { CiLinkedin } from 'react-icons/ci';
 import { FaGithub } from 'react-icons/fa6';
 import { IoMdMail } from 'react-icons/io';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
 
 import astronutImg from '../../public/images/astronut-2.png';
 
 function Contact() {
   const form = useRef<HTMLFormElement | null>(null);
   const [done, setDone] = useState(false);
+  const [canvasSize, setCanvasSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCanvasSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
@@ -64,15 +83,18 @@ function Contact() {
 
   return (
     <div>
-      <div id="Contact" className="flex w-full max-md:flex-col gap-11">
-        <div className="w-1/2 relative max-md:w-full ">
+      <div
+        id="Contact"
+        className="px-16 flex w-full max-lg:flex-col gap-11 max-md:px-5"
+      >
+        <div className="w-1/2 relative max-lg:w-full ">
           <h1 className="h1-semibold title violet-gradient">Get in touch</h1>
           <p className="py-4">
             I'm currently looking for new opportunities, my inbox is always
             open. Whether you have a question or just want to say hi, I'll try
             my best to get back to you!
           </p>
-          <div className="flex gap-3 text-4xl">
+          <div className="flex gap-3 text-4xl max-md:text-2xl">
             <a
               className="cursor-pointer hover:text-dark-4"
               href="https://np.linkedin.com/in/rupa-shrestha"
@@ -104,22 +126,16 @@ function Contact() {
             <img
               src={astronutImg}
               alt="img "
-              className="purple-glow-effect"
+              className="purple-glow-effect h-[500px] w-[500px] absolute top-[25%] left-[3%] object-contain max-md:h-[250px] max-md:w-[300px]"
               style={{
-                position: 'absolute',
-                top: '25%',
-                left: '3%',
-                height: '500px',
-                width: '500px',
-                objectFit: 'contain',
                 transform: 'rotate(45deg)',
               }}
             />
           </motion.div>
           <Canvas
             style={{
-              height: '600px',
-              width: '600px',
+              width: canvasSize.width < 780 ? '350px' : '600px',
+              height: canvasSize.width < 780 ? '350px' : '600px',
               position: 'static',
             }}
           >
@@ -139,7 +155,7 @@ function Contact() {
           </Canvas>
         </div>
         {/* Right */}
-        <div className="flex justify-center items-center w-1/2">
+        <div className="flex justify-center items-center w-1/2 max-lg:w-full">
           <form
             ref={form}
             onSubmit={sendEmail}

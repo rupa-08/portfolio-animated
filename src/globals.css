@@ -14,7 +14,7 @@
 
 @layer utilities {
   .h1-semibold {
-    @apply text-4xl max-xl:text-3xl font-semibold;
+    @apply text-4xl max-xl:text-xl font-semibold;
   }
 
   .violet-gradient-line {
@@ -33,7 +33,7 @@
 
   /* Header section Css */
   .header {
-    @apply w-full sticky z-40 top-0 left-0 bg-gray-900 px-16 opacity-80;
+    @apply w-full sticky z-40 top-0 left-0 bg-gray-900 px-16 opacity-80 max-sm:hidden;
   }
   .header-container {
     @apply flex justify-end items-center gap-8 py-6;
@@ -51,12 +51,13 @@
       transform: rotate(360deg);
     }
   }
-  .hero-image {
-    @apply h-11 w-11 rounded-[50%];
-  }
 
   .header-text {
-    @apply text-lg font-semibold text-white hover:text-gray-500 cursor-pointer;
+    @apply text-lg font-semibold text-white hover:text-gray-500 cursor-pointer max-md:text-sm;
+  }
+
+  .hero-image {
+    @apply h-11 w-11 rounded-[50%];
   }
 
   /* body */
@@ -70,7 +71,7 @@
 
   /* Intro Section CSS */
   .intro {
-    @apply flex  justify-evenly mt-0 pt-0;
+    @apply flex  justify-evenly mt-0 pt-0 max-md:flex-col-reverse;
   }
 
   /* About Section CSS */
@@ -137,7 +138,7 @@
 
   /* Experience CSS */
   .experience-container {
-    @apply flex flex-col justify-center items-center gap-16 max-sm:mt-[790px] max-lg:mt-[600px] max-xl:mt-40 mt-16;
+    @apply flex flex-col justify-center items-center gap-16  max-lg:mt-[600px] max-sm:mt-[700px] max-md:gap-0 max-xl:mt-40 mt-16;
   }
 
   .experience-card-title {
@@ -209,7 +210,7 @@
 
 @layer components {
   .button {
-    @apply border-[1px] rounded-full text-lg w-48 py-3 px-6;
+    @apply border-[1px] rounded-full text-lg w-max py-3 px-6 max-md:p-2 max-md:text-sm;
   }
 
   .portfolio-button {

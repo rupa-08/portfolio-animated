@@ -13,7 +13,7 @@ const Experience = () => {
     <div id="Work" className="experience-container">
       <div>
         <h1 className="h1-semibold title violet-gradient">Work & Education</h1>
-        <h1 className="text-[45px] font-bold text-center">Timeline.</h1>
+        <h1 className="h1-semibold font-bold text-center">Timeline.</h1>
       </div>
 
       {/* Timeline */}
