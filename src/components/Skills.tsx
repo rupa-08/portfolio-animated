@@ -6,7 +6,7 @@ import StarsCanvas from './canvas/Stars';
 
 const Skills = () => {
   return (
-    <div className="p-16 w-full flex-col relative overflow-hidden max-md:mt-[600px] max-sm:mt-[500px]">
+    <div className="p-16 w-full flex-col relative overflow-hidden max-md:mt-[600px] max-sm:mt-[250px]">
       <div className="w-full flex-col max-md:px-0">
         <h1 className="h1-semibold title violet-gradient text-center">
           Technical

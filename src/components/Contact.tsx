@@ -133,7 +133,7 @@ function Contact() {
             <img
               src={astronutImg}
               alt="img "
-              className="purple-glow-effect h-[500px] w-[500px] absolute top-[25%] left-[3%] object-contain max-md:h-[250px] max-md:w-[300px]"
+              className="purple-glow-effect h-[500px] w-[500px] absolute top-[25%] left-[3%] object-contain max-lg:h-[250px] max-lg:w-[300px]"
               style={{
                 transform: 'rotate(45deg)',
               }}
@@ -141,8 +141,8 @@ function Contact() {
           </motion.div>
           <Canvas
             style={{
-              width: canvasSize.width < 780 ? '350px' : '600px',
-              height: canvasSize.width < 780 ? '350px' : '600px',
+              width: canvasSize.width < 1025 ? '350px' : '600px',
+              height: canvasSize.width < 1025 ? '350px' : '600px',
               position: 'static',
             }}
           >

@@ -71,7 +71,7 @@
 
   /* Intro Section CSS */
   .intro {
-    @apply flex  justify-evenly mt-0 pt-0 max-md:flex-col-reverse;
+    @apply flex  justify-evenly mt-0 pt-0 max-lg:flex-col-reverse;
   }
 
   /* About Section CSS */
@@ -81,11 +81,11 @@
   }
 
   .about-image-container {
-    @apply flex items-center h-full bg-gray-950 aspect-square rounded-t-full;
+    @apply flex items-center h-full bg-gray-950 aspect-square rounded-t-full max-lg:aspect-auto;
   }
 
   .about-image {
-    @apply object-cover rounded-tl-full rounded-tr-full translate-x-16 translate-y-8 max-sm:translate-x-0 max-sm:translate-y-0 hover:translate-x-0 hover:translate-y-0;
+    @apply object-cover rounded-tl-full rounded-tr-full translate-x-16 translate-y-8 max-lg:translate-x-0 max-lg:translate-y-0 hover:translate-x-0 hover:translate-y-0;
   }
 
   .glow-effect {
@@ -138,7 +138,7 @@
 
   /* Experience CSS */
   .experience-container {
-    @apply flex flex-col justify-center items-center gap-16  max-lg:mt-[600px] max-sm:mt-[700px] max-md:gap-0 max-xl:mt-40 mt-16;
+    @apply flex flex-col justify-center items-center gap-16  max-lg:mt-[600px] max-sm:mt-[700px] max-lg:gap-0 max-xl:mt-40 mt-16;
   }
 
   .experience-card-title {

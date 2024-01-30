@@ -10,7 +10,7 @@ const Intro = () => {
   return (
     <div>
       <div id="Intro" className="container intro">
-        <div className="w-[44%] flex gap-12 max-md:w-full">
+        <div className="w-[44%] flex gap-12 max-lg:w-full">
           <div className="flex flex-col justify-center items-center">
             <motion.div
               className="w-5 h-5 rounded-full bg-[#915eff] max-sm:hidden"
@@ -47,7 +47,7 @@ const Intro = () => {
             </Link>
           </div>
         </div>
-        <div className="w-[66%] flex justify-center items-center max-md:w-[100%]">
+        <div className="w-[66%] flex justify-center items-center max-lg:w-[100%]">
           <ComputerCanvas />
         </div>
       </div>

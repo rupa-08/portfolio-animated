@@ -17,10 +17,10 @@ const Portfolio = () => {
   return (
     <div>
       <div className="container" id="Portfolio">
-        <div className="flex max-md:flex-col my-24 max-sm:my-5">
+        <div className="flex max-lg:flex-col my-24 max-sm:my-5">
           <motion.div
             whileInView={'visible'}
-            className="w-1/2 max-md:w-full max-md:my-10 flex flex-col max-md:items-center"
+            className="w-1/2 max-lg:w-full max-md:my-10 flex flex-col max-md:items-center"
           >
             <motion.h1
               className="h1-semibold title violet-gradient"
@@ -86,7 +86,7 @@ const Portfolio = () => {
             </motion.button>
           </motion.div>
           <motion.div
-            className="overflow-hidden w-1/2 max-md:w-full"
+            className="overflow-hidden w-1/2 max-lg:w-full"
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1 }}

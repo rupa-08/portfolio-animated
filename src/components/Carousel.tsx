@@ -20,7 +20,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="w-[50vw] max-md:w-full relative">
+    <div className="w-[50vw] max-lg:w-full relative">
       <div
         className="flex"
         style={{
@@ -31,7 +31,7 @@ const Carousel = () => {
         {portfolioProjects.map((item, index) => (
           <div
             key={index}
-            className="w-[50vw] max-md:w-full flex flex-grow-0 flex-shrink-0 flex-basis-auto justify-center items-center max-md:px-11"
+            className="w-[50vw] max-lg:w-full flex flex-grow-0 flex-shrink-0 flex-basis-auto justify-center items-center max-md:px-11"
           >
             <div className="portfolio-gradient-container" key={index}>
               <div className="bg-tertiary portfolio-inner-container">
