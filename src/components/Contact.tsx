@@ -6,6 +6,7 @@ import { Canvas } from '@react-three/fiber';
 import { CiLinkedin } from 'react-icons/ci';
 import { FaGithub } from 'react-icons/fa6';
 import { IoMdMail } from 'react-icons/io';
+import { FaInstagram } from 'react-icons/fa';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
@@ -97,6 +98,13 @@ function Contact() {
           <div className="flex gap-3 text-4xl max-md:text-2xl">
             <a
               className="cursor-pointer hover:text-dark-4"
+              target="blank"
+              href="https://www.instagram.com/_aspaaur/"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              className="cursor-pointer hover:text-dark-4"
               href="https://np.linkedin.com/in/rupa-shrestha"
               target="blank"
             >
@@ -111,7 +119,6 @@ function Contact() {
             </a>
             <a
               className="cursor-pointer hover:text-dark-4"
-              target="blank"
               href="mailto:rupashrestha597@gmail.com"
             >
               <IoMdMail />
