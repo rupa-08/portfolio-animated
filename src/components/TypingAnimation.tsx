@@ -1,11 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 
 const TypingAnimation = () => {
-  const sentences = [
-    'Hi! I am Rupa Shrestha.',
-    ' I believe in combining graphic elements with business strategy to develop innovative products...',
-  ];
+  const sentences = useMemo(
+    () => [
+      'Hi! I am Rupa Shrestha.',
+      ' I believe in combining graphic elements with business strategy to develop innovative products...',
+    ],
+    []
+  );
 
   const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');

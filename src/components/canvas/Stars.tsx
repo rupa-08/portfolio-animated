@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Suspense, useState, useRef } from 'react';
 
 import { Canvas, useFrame } from '@react-three/fiber';
